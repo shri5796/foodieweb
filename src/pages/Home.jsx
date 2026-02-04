@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../components/footer/Footer'
 
 import ContactNav from '../components/navbar/ContactNav'
@@ -34,6 +34,7 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className={styles.page}>
       <header className={styles.header}>
@@ -59,10 +60,10 @@ export default function Home() {
               in our welcoming, culinary haven.
             </p>
             <div className={styles.heroActions}>
-              <button type="button" className={`${styles.heroBtn} ${styles.primary}`}>
+              <button type="button" className={`${styles.heroBtn} ${styles.primary}`} onClick={() => window.location.href = '/book-table'}>
                 Book A Table
               </button>
-              <button type="button" className={`${styles.heroBtn} ${styles.secondary}`}>
+              <button type="button" className={`${styles.heroBtn} ${styles.secondary}`} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </button>
             </div>
@@ -80,7 +81,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink}>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </a>
             </div>
@@ -93,7 +94,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink}>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </a>
             </div>
@@ -106,7 +107,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink}>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </a>
             </div>
@@ -119,7 +120,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink}>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </a>
             </div>
@@ -157,7 +158,7 @@ export default function Home() {
               <p className={styles.aboutParagraph}>
                 Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.
               </p>
-              <p className={styles.aboutParagraph}>
+              <p className={styles.aboutParagraph2}>
                 At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.
               </p>
               <Link to="/about" className={styles.aboutBtn}>
@@ -339,7 +340,7 @@ export default function Home() {
         <section className={styles.blogSection} aria-label="Our Blog & Articles">
           <div className={styles.blogHeader}>
             <h2 className={styles.blogTitle}>Our Blog & Articles</h2>
-            <button type="button" className={styles.blogReadAllBtn}>
+            <button type="button" className={styles.blogReadAllBtn} onClick={() => window.location.href = '/blogs'}>
               Read All Articles
             </button>
           </div>

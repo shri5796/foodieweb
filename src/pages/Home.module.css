@@ -243,6 +243,7 @@
   border-radius: 12px;
   object-fit: cover;
   min-height: 400px;
+  padding: 0 8vh 8vh 0;
 }
 
 .contactCard {
@@ -305,6 +306,15 @@
 }
 
 .aboutParagraph {
+  margin: 0 0 20px;
+  color: #414536;
+  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 600;
+}
+
+.aboutParagraph2 {
   margin: 0 0 20px;
   color: #414536;
   font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
@@ -716,11 +726,11 @@
 
 .testimonialQuote {
   margin: 0 0 16px;
-  color: #ad343e;
+  color: #AD343E;
   font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 20px;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
   line-height: 1.3;
 }
 
