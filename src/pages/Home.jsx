@@ -1,5 +1,5 @@
 import React from "react";
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../components/footer/Footer'
 
 import ContactNav from '../components/navbar/ContactNav'
@@ -81,7 +81,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu' }>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </a>
             </div>
@@ -94,7 +94,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu' }>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </a>
             </div>
@@ -107,7 +107,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu' }>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </a>
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
               <p className={styles.menuCardDescription}>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu' }>
+              <a href="#menu" className={styles.menuCardLink} onClick={() => window.location.href = '/menu'}>
                 Explore Menu
               </a>
             </div>
