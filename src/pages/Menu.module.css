@@ -72,3 +72,31 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
+
+@media (max-width: 900px) {
+  .menuPage {
+    padding: 60px 6%;
+  }
+
+  .menuPage h2 {
+    font-size: 64px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .menuPage {
+    padding: 48px 16px;
+  }
+
+  .menuPage h2 {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+}
