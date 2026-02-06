@@ -340,7 +340,7 @@ export default function Home() {
         <section className={styles.blogSection} aria-label="Our Blog & Articles">
           <div className={styles.blogHeader}>
             <h2 className={styles.blogTitle}>Our Blog & Articles</h2>
-            <button type="button" className={styles.blogReadAllBtn} onClick={() => window.location.href = '/blogs'}>
+            <button type="button" className={styles.blogReadAllBtn} onClick={() => navigate('/blogs')}>
               Read All Articles
             </button>
           </div>
